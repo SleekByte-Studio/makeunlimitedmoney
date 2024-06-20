@@ -65,7 +65,7 @@ images = ["cover.png"]
   sectionFooter = false # false (default) or true
 
   # Blog
-  relatedPosts = false # false (default) or true
+  relatedPosts = true # false (default) or true
   imageList = true # true (default) or false
   imageSingle = true # true (default) or false
 

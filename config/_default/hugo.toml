@@ -1,6 +1,6 @@
 title = "MakeUnlimitedMoney"
-baseurl = "https://www.makeunlimitedmoney.online/"
-canonifyURLs = false
+baseurl = "https://www.makeunlimitedmoney.online"
+canonifyURLs = true
 disableAliases = true
 disableHugoGeneratorInject = true
 # disableKinds = ["taxonomy", "term"]
@@ -82,3 +82,9 @@ copyRight = "Copyright (c) 2020-2024 Hyas"
   hint = "photo"
   quality = 85
   resampleFilter = "Lanczos"
+
+[markup]
+  [markup.tableOfContents]
+    startLevel = 2
+    ordered = true
+    endLevel = 2
