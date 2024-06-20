@@ -1,59 +1,66 @@
 {{ define "main" }}
 <section class="section container-fluid mt-n3 pb-3">
-  <div class="row justify-content-center">
-    <div class="col-lg-12 text-center">
-      <h1>{{ .Title }}</h1>
+    <div class="row justify-content-center">
+        <div class="col-lg-12 text-center">
+            <h1>{{ .Title }}</h1>
+        </div>
+        <div class="col-lg-9 col-xl-8 text-center">
+            <p class="lead">{{ .Params.lead | safeHTML }}</p>
+            <a class="btn btn-primary btn-cta rounded-pill btn-lg my-3" href="/blog" role="button">Start Making Money</a>
+            {{ .Content }}
+        </div>
     </div>
-    <div class="col-lg-9 col-xl-8 text-center">
-      <p class="lead">{{ .Params.lead | safeHTML }}</p>
-      <a class="btn btn-primary btn-cta rounded-pill btn-lg my-3" href="/docs/{{ if site.Params.doks.docsVersioning }}{{ site.Params.doks.docsVersion }}/{{ end }}guides/example-guide/" role="button">{{ i18n "get_started" }}</a>
-      {{ .Content }}
-    </div>
-  </div>
 </section>
-{{ end }}
-
-{{ define "sidebar-prefooter" }}
-  {{ if site.Params.doks.backgroundDots -}}
-  <div class="d-flex justify-content-start">
+{{ end }} {{ define "sidebar-prefooter" }} {{ if site.Params.doks.backgroundDots -}}
+<div class="d-flex justify-content-start">
     <div class="bg-dots"></div>
-  </div>
-  {{ end -}}
-  {{ if eq $.Site.Language.LanguageName "English" }}
-  <section class="section section-md section-features">
+</div>
+{{ end -}} {{ if eq $.Site.Language.LanguageName "English" }}
+<section class="section section-md section-features">
     <div class="container">
-      <div class="row justify-content-center text-center">
-        <div class="col-lg-5">
-          <h2 class="h4">Update content</h2>
-          <p>Edit <code>content/_index.md</code> to see this page change.</p>
+        <h2 class="text-center">Why should you trust MakeUnlimitedMoney.Online?</h2>
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-5">
+                <h2 class="h4">Proven Strategies</h2>
+                <p>We share tried and tested methods to help you earn money online. From affiliate marketing to freelancing, and e-commerce to blogging, our comprehensive guides cover it all.</p>
+            </div>
+            <div class="col-lg-5">
+                <h2 class="h4">Expert Insights</h2>
+                <p>Our blog is written by industry experts who have successfully navigated the online money-making landscape. Get insider tips, tricks, and strategies straight from the pros.</p>
+            </div>
+            <div class="col-lg-5">
+                <h2 class="h4">Community Support</h2>
+                <p>Join a thriving community of like-minded individuals who are also on their journey to financial freedom. Share your experiences, ask questions, and learn from others in our forum.</p>
+            </div>
         </div>
-        <div class="col-lg-5">
-          <h2 class="h4">Add new content</h2>
-          <p>Add Markdown files to <code>content</code> to create new pages.</p>
-        </div>
-        <div class="col-lg-5">
-          <h2 class="h4">Configure your site</h2>
-          <p>Edit your config in <code>config/_default/hyas/doks.toml</code>.</p>
-        </div>
-        <div class="col-lg-5">
-          <h2 class="h4">Read the docs</h2>
-          <p>Learn more in the <a href="https://getdoks.org/">Docs</a>.</p>
-        </div>
-      </div>
     </div>
-  </section>
-  {{ end }}
-{{ end }}
-
-{{ define "sidebar-footer" }}
-{{ if site.Params.doks.sectionFooter -}}
-<section class="section section-md container-fluid bg-light">
-  <div class="row justify-content-center text-center">
-    <div class="col-lg-7">
-      <h2 class="mt-2">Start building with Doks today</h2>
-      <a class="btn btn-primary rounded-pill px-4 my-2" href="/docs/{{ if site.Params.doks.docsVersioning }}{{ site.Params.doks.docsVersion }}/{{ end }}prologue/introduction/" role="button">{{ i18n "get-started" }}</a>
-    </div>
-  </div>
 </section>
-{{ end -}}
-{{ end }}
+<section class="section section-md section-features">
+    <div class="container">
+        <h2 class="text-center">What You’ll Find Here</h2>
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-5">
+                <h2 class="h4">In-Depth Articles</h2>
+                <p>Our blog features in-depth articles on various ways to make money online. Learn about the latest trends, tools, and techniques that can help you maximize your earnings.</p>
+            </div>
+            <div class="col-lg-5">
+                <h2 class="h4">Step-by-Step Guides</h2>
+                <p>We provide detailed step-by-step guides to help you get started with different online money-making methods. Whether it's setting up a blog, creating an online store, or mastering social media marketing, we've got you covered.</p>
+            </div>
+            <div class="col-lg-5">
+                <h2 class="h4">Success Stories</h2>
+                <p>Get inspired by real-life success stories from people who have made it big online. Learn about their journeys, challenges, and the strategies that led them to success.</p>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }} {{ end }} {{ define "sidebar-footer" }} {{ if site.Params.doks.sectionFooter -}}
+<section class="section section-md container-fluid bg-light">
+    <div class="row justify-content-center text-center">
+        <div class="col-lg-7">
+            <h2 class="mt-2">Start building with Doks today</h2>
+            <a class="btn btn-primary rounded-pill px-4 my-2" href="/docs/{{ if site.Params.doks.docsVersioning }}{{ site.Params.doks.docsVersion }}/{{ end }}prologue/introduction/" role="button">{{ i18n "get-started" }}</a>
+        </div>
+    </div>
+</section>
+{{ end -}} {{ end }}
