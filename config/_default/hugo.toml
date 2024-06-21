@@ -1,5 +1,5 @@
 title = "MakeUnlimitedMoney"
-baseurl = "https://www.makeunlimitedmoney.online"
+baseurl = "https://makeunlimitedmoney.online"
 canonifyURLs = true
 disableAliases = true
 disableHugoGeneratorInject = true

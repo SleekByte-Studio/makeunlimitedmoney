@@ -7,7 +7,7 @@ lastmod: 2023-09-07T16:27:22+02:00
 draft: false
 weight: 50
 categories: ["Copywriting"]
-tags: ["Copywriting"]
+tags: ["how to become a Copywriter", "copywriting in 2024", "copywriting clients"]
 contributors: []
 pinned: false
 homepage: false
