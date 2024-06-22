@@ -22,29 +22,24 @@
   weight = 10
 
 [[main]]
+  name = "Finance"
+  url = "/categories/finance/"
+  weight = 20
+
+[[main]]
+  name = "Investing"
+  url = "/categories/investing/"
+  weight = 30
+
+[[main]]
   name = "Side Hustles"
   url = "/categories/side-hustles/"
-  weight = 20
+  weight = 40
 
 [[main]]
   name = "Social Media"
   url = "/categories/social-media/"
-  weight = 30
-
-[[main]]
-  name = "Dropshipping"
-  url = "/categories/dropshipping/"
-  weight = 40
-
-[[main]]
-  name = "Others"
-  url = "/categories/others"
   weight = 50
-
-[[main]]
-  name = "About"
-  url = "/about/"
-  weight = 60
 
 [[social]]
   name = "Twitter"
