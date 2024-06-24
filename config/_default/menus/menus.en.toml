@@ -84,3 +84,13 @@
   name = "Terms of Service"
   url = "/terms/"
   weight = 20
+
+[[footer]]
+  name = "Contact Us"
+  url = "/contact/"
+  weight = 30
+
+[[footer]]
+  name = "About Us"
+  url = "/about/"
+  weight = 40
