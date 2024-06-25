@@ -1,5 +1,4 @@
 {{ define "main" }}
-<div id="container-81eb0e1ced158b51ca0f869e7bbd529a"></div>
 <article>
 <div class="row justify-content-center">
   <div class="col-md-12 col-lg-10">
@@ -25,16 +24,6 @@
   {{ end -}}
   <div class="col-md-12 col-lg-9">
     {{ with .Params.summary -}}<p class="lead">{{ . }}</p>{{ end -}}
-    <script type="text/javascript">
-      atOptions = {
-        'key' : 'cb4e9da26df02307dfe09b384093b660',
-        'format' : 'iframe',
-        'height' : 600,
-        'width' : 160,
-        'params' : {}
-      };
-    </script>
-    <script type="text/javascript" src="//www.topcreativeformat.com/cb4e9da26df02307dfe09b384093b660/invoke.js"></script>
     {{ with .TableOfContents }}
       <div>
       <h4>Table of Contents</h4>
@@ -52,28 +41,9 @@
   </div>
 </div>
 </article>
-<script type="text/javascript">
-	atOptions = {
-		'key' : 'f1cfb5d5ae7f17dfada870cca3db709a',
-		'format' : 'iframe',
-		'height' : 60,
-		'width' : 468,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//www.topcreativeformat.com/f1cfb5d5ae7f17dfada870cca3db709a/invoke.js"></script>
 {{ end }}
 
 {{ define "sidebar-footer" }}
-<script type="text/javascript">
-	atOptions = {
-		'key' : 'f1cfb5d5ae7f17dfada870cca3db709a',
-		'format' : 'iframe',
-		'height' : 60,
-		'width' : 468,
-		'params' : {}
-	};
-</script>
 {{ if site.Params.doks.relatedPosts -}}
   {{ $related := .Site.RegularPages.Related . | first 3 -}}
   {{ with $related -}}
